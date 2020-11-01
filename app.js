@@ -213,7 +213,7 @@ app.post("/job",function(req,res){
     console.log(req.body.proj)
     console.log(req.body.area)
     console.log(nameo)
-    User.updateOne({name:nameo},{project:proj,area:areao,typeofwork:work,pdesc:projd,mdays:mdayso,location:locationo,costo:cost},function(err){
+    User.updateOne({name:nameo},{project:proj,area:areao,typeofwork:work,pdesc:projd,mdays:mdayso,location:locationo,cost:costo},function(err){
         if(err){
             console.log(err)
         }

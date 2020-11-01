@@ -135,7 +135,7 @@
   <div class="progress-bar" role="progressbar" style="width:<%= obj.progress %>%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><%= obj.progress %>%</div>
 </div>
 <% } %> 
-<% if(constr!=null){ %> 
+<% if(constr.work[0]!=null){ %> 
      
         <div class="card card-body">
           <h2>Workers List</h2>
@@ -173,7 +173,7 @@
       </div> 
       <% } %> 
  
-      <% if(constr!=null){ %> 
+      <% if(constr.costd[0]!=null){ %> 
      
         <div class="card card-body">
           <h2>Todays Total Cost</h2>
@@ -274,10 +274,13 @@
         <% } %> 
         <% if(constr!=null){ %> 
           <div class="container">
-         <div class="row">
+            
+            <div class="row">
            <div class="col">
              <div class="card">
-            <div class="progress">
+              <h4 style="padding:10px ;">Estimated Progress</h4>
+       
+              <div class="progress">
               <div class="progress-bar bg-success" role="progressbar" style="width: <%= constr.time[0].perc1 %>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><%= constr.time[0].phase1 %></div>
             </div>
             <div class="progress">
@@ -294,7 +297,7 @@
           <div class="col">
             <div class="card" style="width: 400px;height: 230px">
      
-            <h3>Pie Chart</h3> 
+            <h3 style="padding-top:10px;padding-left:10px;">Pie Chart</h3> 
             <div class="piechart" style="border-radius: 50%;  width: 170px; height: 170px;  display: flex; justify-content: center; align-items: center;  background-image: conic-gradient(  pink <%= constr.time[0].perc1%>deg,  lightblue 0 <%= constr.time[0].perc2%>deg,orange 0 <%= constr.time[0].perc3%>deg,red 0 <%= constr.time[0].perc4%>deg); 
            "></div> 
        

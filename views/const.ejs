@@ -126,19 +126,12 @@
           <h5 class="card-title"><%= client.name %> </h5>
           <h6 class="card-subtitle mb-2 text-muted">Email :<%= client.email %> </h6>
           <h6 class="card-title"><%= client.project %> </h6>
-          <h6 class="card-title"><%= client.pdesc %> </h6>
-          <h6 class="card-title"><%= client.cost %> </h6>
+          <h6 class="card-title">Project Description : <%= client.pdesc %> </h6>
+          <h6 class="card-title">Estimated Cost : <%= client.cost %> </h6>
         
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
          <% if(obj.project!=" "){ %> 
-          <% if(obj.time[0]===null){ %> 
-    
+        
           <h5>  <a href="/lab" class="card-link">Timeline<a></h5>
-            <% } %>  
-            <% if(obj.time[0]!=null){ %> 
-    
-              <h5>  <a href="/" class="card-link">Timeline</a></h5>
-                <% } %>  
                 <% } %>  
         
           </div>
