@@ -467,7 +467,7 @@ app.post("/photo",function(req,res){
           return;
         }
         res.json({ fields });
-    console.log(fields)
+    console.log(fields.name)
 });
     }); 
     
