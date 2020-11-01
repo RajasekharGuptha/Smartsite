@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>    <link rel="stylesheet" href="css/const.css">
+       <link href="css/main.css" rel="stylesheet" media="all">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+ 
+ align-items: center;
+ text-align: center;
+}
+th, td {
+  padding: 15px;
+}
+input{
+  line-height: 30px;
+  text-align: center;
+ 
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-secondary">
+    <div class="container">
+      <a class="navbar-brand" href="/">Pentos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+  <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+  <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+  <li class="nav-item">
+            <a class="nav-link" href="/proj">Search</a>
+          </li>
+  <li class="nav-item">
+            <a class="nav-link" href="/login">Logout</a>
+          </li>
+  </ul>
+  </div>
+  </div>
+  </nav>
+<div style="margin: 50px;margin-top: 100px;">
+  
+  <h2 style="text-align: center;color: black;">Schedule</h2>
+<h3 style="text-align: center;color: black;" >Work allotment for the labor group</h3>
+
+  <div class="testbox">
+
+  <form action="/work" method="POST">
+    <div class="colums">
+      <div class="item">
+        <label for="fname"> Name<span>*</span></label>
+        <input id="fname" type="text" name="name" placeholder="" required/>
+      </div>
+\        <div class="item">
+        <label for="phone">ProjectName<span>*</span></label>
+        <input id=""  type="text" name="proj" required/>
+      </div>
+</div>
+<table style="width:100%;margin-top: 40px;">
+  <tr>
+    <th style="font-size: x-large;">Labour</th> 
+    <th style="font-size: x-large;">Designation</th>
+   
+    <th  style="font-size: x-large;">Work</th>
+  </tr>
+  <tr>
+    <td> <input class="input" type="text" name="lname1" placeholder="Enter Labour Name" required/></td>
+    <td> <input class="input"  type="text" name="dname1" placeholder="Enter the Designation" required/></td>
+  
+    <td> <input class="input" type="text" name="wname1" placeholder="Enter the Workdone" required/></td>
+  </tr>
+  <td> <input class="input" type="text" name="lname2" placeholder="Enter Labour Name" required/></td>
+    <td> <input class="input"  type="text" name="dname2" placeholder="Enter the Designation" required/></td>
+  
+    <td> <input class="input" type="text" name="wname2" placeholder="Enter the Workdone" required/></td>
+  </tr>
+  <td> <input class="input" type="text" name="lname3" placeholder="Enter Labour Name" required/></td>
+  <td> <input class="input"  type="text" name="dname3" placeholder="Enter the Designation" required/></td>
+
+  <td> <input class="input" type="text" name="wname3" placeholder="Enter the Workdone" required/></td>
+</tr>
+<td> <input class="input" type="text" name="lname4" placeholder="Enter Labour Name" required/></td>
+    <td> <input class="input"  type="text" name="dname4" placeholder="Enter the Designation" required/></td>
+  
+    <td> <input class="input" type="text" name="wname4" placeholder="Enter the Workdone" required/></td>
+  </tr>
+  
+</table>
+<div class="btn-block">
+  <button type="submit" href="/">Submit</button>
+</div>
+
+</form>
+</div>
+
+
+</div>
+</body>
+</html>

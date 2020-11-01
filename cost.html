@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/main.css" rel="stylesheet" media="all">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+ 
+ align-items: center;
+ text-align: center;
+}
+th, td {
+  padding: 15px;
+}
+input{
+  line-height: 30px;
+  text-align: center;
+ 
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-secondary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Pentos</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Opportunities</a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/register">Register</a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+    <div class="testbox"style="text-align: center;margin-top: 100px;">
+<h2 style="text-align: center;margin-top: 100px;">Items</h2>
+<div style="background-color: white;">
+<form action="/cost" method="POST">
+    <div class="form-group">
+        <label style="color: black;font-weight: x-large;"for="Name">Name:</label>
+        <input type="text" class="form-control" name="name" placeholder="Enter Your Name" id="name">
+      </div>
+  
+    <div class="form-group">
+            <label style="color: black;font-weight: x-large;"for="Name">ProjectName:</label>
+            <input type="text" class="form-control" name="pname" placeholder="Enter Project Name" id="pname">
+          </div>
+  
+        
+<table style="width:100%">
+ 
+    <tr>
+    <th style="font-size: x-large;">Products</th>
+    <th style="font-size: x-large;">Quantity</th> 
+    <th  style="font-size: x-large;">Cost</th>
+  </tr>
+  <tr>
+    <td>  <div class="value">
+        <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+                <select class="opt" name="p1">
+                    <option disabled="disabled" selected="selected">Choose item</option>
+                    <option>Cement</option>
+                    <option>Bricks</option>
+                    <option>Sand</option>
+                    <option>Iron Rod</option>
+                    <option>Tiles</option>
+                </select>
+                <div class="select-dropdown"></div>
+            </div>
+        </div>
+    </div></td>
+    <td>  <input id="fname" type="text" name="q1name" placeholder="" required/></td>
+    <td>   <input id="fname" type="text" name="c1name" placeholder="" required/></td>
+  </tr>
+  <tr>
+    <td>  <div class="value">
+        <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+                <select class="opt" name="p2">
+                    <option disabled="disabled" selected="selected">Choose item</option>
+                    <option>Cement</option>
+                    <option>Bricks</option>
+                    <option>Sand</option>
+                    <option>Iron Rod</option>
+                    <option>Tiles</option>
+                </select>
+                <div class="select-dropdown"></div>
+            </div>
+        </div>
+    </div></td>
+    <td>  <input id="fname" type="text" name="q2name" placeholder="" required/></td>
+    <td>   <input id="fname" type="text" name="c2name" placeholder="" required/></td>
+  </tr>
+  <tr>
+    <td>  <div class="value">
+        <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+                <select class="opt" name="p3">
+                    <option disabled="disabled" selected="selected">Choose item</option>
+                    <option>Cement</option>
+                    <option>Bricks</option>
+                    <option>Sand</option>
+                    <option>Iron Rod</option>
+                    <option>Tiles</option>
+                </select>
+                <div class="select-dropdown"></div>
+            </div>
+        </div>
+    </div></td>
+    <td>  <input id="fname" type="text" name="q3name" placeholder="" required/></td>
+    <td>   <input id="fname" type="text" name="c3name" placeholder="" required/></td>
+  </tr>
+  <tr>
+    <td>  <div class="value">
+        <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+                <select class="opt" name="p4">
+                    <option disabled="disabled" selected="selected">Choose item</option>
+                    <option>Cement</option>
+                    <option>Bricks</option>
+                    <option>Sand</option>
+                    <option>Iron Rod</option>
+                    <option>Tiles</option>
+                </select>
+                <div class="select-dropdown"></div>
+            </div>
+        </div>
+    </div></td>
+    <td>  <input id="fname" type="text" name="q4name" placeholder="" required/></td>
+    <td>   <input id="fname" type="text" name="c4name" placeholder="" required/></td>
+  </tr>
+  
+  
+</table>
+<div class="btn-block">
+    <button type="submit" href="/">Submit</button>
+  </div>
+
+</form>
+</div>
+</div>
+</body>
+</html>

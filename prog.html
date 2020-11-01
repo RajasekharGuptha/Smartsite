@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/const1.css">
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+           
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-secondary">
+        <div class="container">
+          <a class="navbar-brand" href="/">Pentos</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+      <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+      <li class="nav-item">
+                <a class="nav-link" href="/proj">Search</a>
+              </li>
+      <li class="nav-item">
+                <a class="nav-link" href="/login">Logout</a>
+              </li>
+      </ul>
+      </div>
+      </div>
+      </nav>
+  <div class="testbox">
+        <form action="/prog" method="POST">
+          <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter Your Name" id="name">
+          </div>
+      
+          <div class="form-group">
+                <label for="Name">ProjectName:</label>
+                <input type="text" class="form-control" name="pname" placeholder="Enter Project Name" id="pname">
+              </div>
+          
+            <div class="form-group">
+                <label for="Name">Percentage:</label>
+                <input style="width:200px"type="number" class="form-control" name="percent" placeholder="Enter the Percentage" id="percent">
+              </div>
+              <div class="form-group">
+                <label for="Name">Description of Todays Work:</label>
+                <textarea rows="4" cols="50" name="desc" placeholder="" type="text" class="form-control"></textarea>
+              </div>
+              <form action="/const" enctype="multipart/form-data" method="post">
+                <input style="margin-top: 5px;"type="file" name="upload" multiple>
+                <input style="margin-top: 5px;"type="submit" value="Upload">
+            </form>
+               
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>    
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
